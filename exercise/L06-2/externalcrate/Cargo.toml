@@ -1,0 +1,16 @@
+[package]
+name = "externalcrate"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "mycrate"
+path = "src/lib.rs"
+
+[[bin]]
+name = "myapp"
+path = "src/bin/bin.rs" # replace bin.rs with name of your file
+
+[dependencies]
